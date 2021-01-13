@@ -10,10 +10,10 @@ Start with from clause to introduce source (customers) and range (cust)
 
 ### Filtering
 
-Returns customers from "London"
+Returns customers from "London":
 
 `var queryLondonCustomers = from cust in customers where cust.City == "London" select cust;`
 
-Returns customers from "London" and named "Devon"
+Returns customers from "London" and named "Devon":
 
 `var queryLondonCustomers = from cust in customers where cust.City == "London" && cust.Name == "Devon" select cust;`
