@@ -4,7 +4,7 @@
 
 ### Set source and range
 
-Start with from clause to introduce source (departments) and range (dep)
+Start with from clause to introduce source (customers) and range (cust)
 
 `var queryAllCustomers = from cust in customers select cust;`
 
