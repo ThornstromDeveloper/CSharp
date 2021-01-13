@@ -26,8 +26,8 @@ Returns customers from "London" and named "Devon":
 
 Returns the amount of numbers in numbers below 3 and above 7 (5):
 
-List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-var numCount = numbers.Where(n => n < 3 || n > 7).Count();
+`List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };`
+`var numCount = numbers.Where(n => n < 3 || n > 7).Count();`
 
 ### Query expression with method syntax
 
@@ -35,5 +35,5 @@ var numCount = numbers.Where(n => n < 3 || n > 7).Count();
 
 Returns the amount of numbers in numbers below 3 and above 7 (5):
 
-List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+`List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };`
 `int numCount1 = (from num in numbers where num < 3 || num > 7 select num).Count();`
