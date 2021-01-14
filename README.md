@@ -28,22 +28,40 @@ var queryLondonCustomers = from cust in customers where cust.City == "London" &&
 
 ### Method syntax
 
-#### Count occurences in list
+#### Count() - Count occurences in list
 
-Returns the amount of numbers in numbers below 3 and above 7 (5):
+Returns the amount of numbers in 'numbers' below 3 and above 7 (5):
 
 ```
 List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var numCount = numbers.Where(n => n < 3 || n > 7).Count();
 ```
 
+#### ToList() - Return occurences in list
+
+Returns the occurences of numbers in 'numbers' below 3 and above 7 (5):
+
+```
+List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+var numList = numbers.Where(n => n < 3 || n > 7).ToList();
+```
+
 ### Query expression with method syntax
 
-#### Count occurences in list
+#### Count() - Count occurences in list
 
 Returns the amount of numbers in numbers below 3 and above 7 (5):
 
 ```
 List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-int numCount1 = (from num in numbers where num < 3 || num > 7 select num).Count();
+int numCount = (from num in numbers where num < 3 || num > 7 select num).Count();
+```
+
+#### ToList() - Return occurences in list
+
+Returns the occurences of numbers in 'numbers' below 3 and above 7 (5):
+
+```
+List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int numList = (from num in numbers where num < 3 || num > 7 select num).ToList();
 ```
