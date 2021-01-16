@@ -110,7 +110,7 @@ var res = my_list.Where(a => a.Contains("Dog"));
 
 #### String.Join
 
-Concatenates the members of a collection, using the specified separator between each member.
+Concatenates all the elements of a string array, using the specified separator between each element.
 
 ```
 string[] words = { "one", "two", "three" };
