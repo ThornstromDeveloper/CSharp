@@ -65,3 +65,28 @@ Returns the occurences of numbers in 'numbers' below 3 and above 7 (5):
 List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int numList = (from num in numbers where num < 3 || num > 7 select num).ToList();
 ```
+
+## String methods
+
+#### Contains() - Check if string contains substring 
+
+Check whether the substring occurs within a given string or not.
+
+Definition:
+```
+public bool Contains(string str)
+```
+
+Example:
+```
+List<string> my_list = new List<string>() { 
+        "This is my Dog", 
+        "Name of my Dog is Robin", 
+        "This is my Cat", 
+        "Name of the cat is Mewmew"
+}; 
+
+var res = my_list.Where(a => a.Contains("Dog")); 
+```
+
+'res' will have the strings: 'This is my Dog' and 'Name of my Dog is Robin'
