@@ -107,3 +107,14 @@ var res = my_list.Where(a => a.Contains("Dog"));
 ```
 
 'res' will have the strings: 'This is my Dog' and 'Name of my Dog is Robin'
+
+#### String.Join
+
+Concatenates the members of a collection, using the specified separator between each member.
+
+```
+string[] words = { "one", "two", "three" };
+var result = string.Join(",", words);
+```
+
+'result' will be 'one,two,three'
