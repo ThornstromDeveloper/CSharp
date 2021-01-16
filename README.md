@@ -66,9 +66,26 @@ List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int numList = (from num in numbers where num < 3 || num > 7 select num).ToList();
 ```
 
+## String properties
+
+#### String.Length
+
+Definition:
+```
+public int Length { get; }
+```
+
+Example:
+```
+string str = "abcdefg";
+int length = str.Length;
+```
+
+'length' will be 7
+
 ## String methods
 
-#### Contains() - Check if string contains substring 
+#### String.Contains
 
 Check whether the substring occurs within a given string or not.
 
